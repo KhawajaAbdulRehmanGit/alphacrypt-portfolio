@@ -1,4 +1,4 @@
-import { Code, Cpu, LineChart } from 'lucide-react';
+import { Code, Cpu, LineChart, Workflow, Database, Shield } from 'lucide-react';
 
 const features = [
   {
@@ -15,17 +15,32 @@ const features = [
     icon: <LineChart className="w-8 h-8 text-primary" />,
     title: "Analytics Integration",
     description: "Data-driven insights to optimize your operations"
+  },
+  {
+    icon: <Workflow className="w-8 h-8 text-primary" />,
+    title: "Workflow Optimization",
+    description: "Streamline your business processes for maximum efficiency"
+  },
+  {
+    icon: <Database className="w-8 h-8 text-primary" />,
+    title: "Data Management",
+    description: "Secure and efficient handling of your business data"
+  },
+  {
+    icon: <Shield className="w-8 h-8 text-primary" />,
+    title: "Security Solutions",
+    description: "Protect your automation systems with robust security"
   }
 ];
 
 export const Features = () => {
   return (
-    <section className="py-20 px-4 bg-secondary">
+    <section id="services" className="py-20 px-4 bg-secondary">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 gradient-text">
           Our Services
         </h2>
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, index) => (
             <div 
               key={index}
