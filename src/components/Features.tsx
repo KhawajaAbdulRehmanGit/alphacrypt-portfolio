@@ -1,6 +1,16 @@
-import { Code, Cpu, LineChart, Workflow, Database, Shield } from 'lucide-react';
+import { Code, Cpu, LineChart, Workflow, Database, Shield, Brain, Cloud } from 'lucide-react';
 
 const features = [
+  {
+    icon: <Brain className="w-8 h-8 text-primary" />,
+    title: "AI Solutions",
+    description: "Custom AI-powered solutions to automate and enhance your business processes"
+  },
+  {
+    icon: <Cloud className="w-8 h-8 text-primary" />,
+    title: "Micro SaaS",
+    description: "Scalable, focused software solutions for specific business needs"
+  },
   {
     icon: <Code className="w-8 h-8 text-primary" />,
     title: "Custom Development",
@@ -15,16 +25,6 @@ const features = [
     icon: <LineChart className="w-8 h-8 text-primary" />,
     title: "Analytics Integration",
     description: "Data-driven insights to optimize your operations"
-  },
-  {
-    icon: <Workflow className="w-8 h-8 text-primary" />,
-    title: "Workflow Optimization",
-    description: "Streamline your business processes for maximum efficiency"
-  },
-  {
-    icon: <Database className="w-8 h-8 text-primary" />,
-    title: "Data Management",
-    description: "Secure and efficient handling of your business data"
   },
   {
     icon: <Shield className="w-8 h-8 text-primary" />,
