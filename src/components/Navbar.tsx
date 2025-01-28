@@ -18,7 +18,7 @@ export const Navbar = () => {
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex justify-between items-center">
           <a href="/" className="text-2xl font-bold gradient-text">
-            Axe Automation
+            AlphaCrypt
           </a>
           
           {/* Mobile menu button */}
