@@ -1,11 +1,29 @@
 import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { toast } from "sonner";
 
 export const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     setIsVisible(true);
   }, []);
+
+  const handleGetStarted = () => {
+    // Navigate to contact form
+    navigate('/contact');
+    toast.success("Let's get started with your automation journey!");
+  };
+
+  const handleLearnMore = () => {
+    // Smooth scroll to About section
+    const aboutSection = document.getElementById('about');
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: 'smooth' });
+    }
+    toast.info("Explore our services and solutions");
+  };
 
   return (
     <section className="min-h-screen flex items-center justify-center px-4 relative overflow-hidden">
@@ -18,10 +36,16 @@ export const Hero = () => {
           Streamline your business processes with cutting-edge automation technology
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <button className="bg-primary px-8 py-3 rounded-full text-white font-semibold hover:opacity-90 transition-opacity">
+          <button 
+            onClick={handleGetStarted}
+            className="bg-primary px-8 py-3 rounded-full text-white font-semibold hover:opacity-90 transition-opacity"
+          >
             Get Started
           </button>
-          <button className="border border-primary px-8 py-3 rounded-full text-white font-semibold hover:bg-primary/10 transition-all">
+          <button 
+            onClick={handleLearnMore}
+            className="border border-primary px-8 py-3 rounded-full text-white font-semibold hover:bg-primary/10 transition-all"
+          >
             Learn More
           </button>
         </div>
