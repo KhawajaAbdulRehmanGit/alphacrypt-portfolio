@@ -6,6 +6,7 @@ import { Navbar } from '../components/Navbar';
 import { Footer } from '../components/Footer';
 import { Projects } from '../components/Projects';
 import { Testimonials } from '../components/Testimonials';
+import { Blogs } from '../components/Blogs';
 
 const Index = () => {
   return (
@@ -15,6 +16,7 @@ const Index = () => {
       <About />
       <Features />
       <Projects />
+      <Blogs />
       <Testimonials />
       <Contact />
       <Footer />

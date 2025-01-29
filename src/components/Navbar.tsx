@@ -34,6 +34,7 @@ export const Navbar = () => {
             <a href="#about" className="text-gray-300 hover:text-white transition-colors">About</a>
             <a href="#services" className="text-gray-300 hover:text-white transition-colors">Services</a>
             <a href="#projects" className="text-gray-300 hover:text-white transition-colors">Projects</a>
+            <a href="#blogs" className="text-gray-300 hover:text-white transition-colors">Blogs</a>
             <a href="#contact" className="text-gray-300 hover:text-white transition-colors">Contact</a>
           </div>
         </div>
@@ -45,6 +46,7 @@ export const Navbar = () => {
               <a href="#about" className="text-gray-300 hover:text-white transition-colors">About</a>
               <a href="#services" className="text-gray-300 hover:text-white transition-colors">Services</a>
               <a href="#projects" className="text-gray-300 hover:text-white transition-colors">Projects</a>
+              <a href="#blogs" className="text-gray-300 hover:text-white transition-colors">Blogs</a>
               <a href="#contact" className="text-gray-300 hover:text-white transition-colors">Contact</a>
             </div>
           </div>
