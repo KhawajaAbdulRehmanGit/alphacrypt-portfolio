@@ -11,13 +11,11 @@ export const Hero = () => {
   }, []);
 
   const handleGetStarted = () => {
-    // Navigate to contact form
     navigate('/contact');
     toast.success("Let's get started with your automation journey!");
   };
 
   const handleLearnMore = () => {
-    // Smooth scroll to About section
     const aboutSection = document.getElementById('about');
     if (aboutSection) {
       aboutSection.scrollIntoView({ behavior: 'smooth' });
