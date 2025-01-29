@@ -1,18 +1,19 @@
 import { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import { toast } from "sonner";
 
 export const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
-  const navigate = useNavigate();
 
   useEffect(() => {
     setIsVisible(true);
   }, []);
 
   const handleGetStarted = () => {
-    navigate('/contact');
-    toast.success("Let's get started with your automation journey!");
+    const emailAddress = 'alphacrypt55@gmail.com';
+    const subject = 'Inquiry about Automation Solutions';
+    const mailtoLink = `mailto:${emailAddress}?subject=${encodeURIComponent(subject)}`;
+    window.location.href = mailtoLink;
+    toast.success("Opening email client...");
   };
 
   const handleLearnMore = () => {
