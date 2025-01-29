@@ -1,4 +1,4 @@
-import { Brain, Robot, Code } from "lucide-react";
+import { Brain, Bot, Code } from "lucide-react";
 
 export const Blogs = () => {
   const blogs = [
@@ -12,7 +12,7 @@ export const Blogs = () => {
     {
       title: "Machine Learning Best Practices",
       description: "A comprehensive guide to implementing machine learning solutions in your organization effectively.",
-      icon: Robot,
+      icon: Bot,
       date: "Jan 28, 2024",
       readTime: "7 min read"
     },
