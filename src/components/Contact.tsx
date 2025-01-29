@@ -35,7 +35,7 @@ export const Contact = () => {
               <MapPin className="w-6 h-6 text-primary mt-1" />
               <div>
                 <h3 className="text-xl font-semibold mb-2">Visit Us</h3>
-                <p className="text-gray-400">123 Business Street<br />Tech City, TC 12345</p>
+                <p className="text-gray-400">Dubai Silicon Oasis<br />Dubai, United Arab Emirates</p>
               </div>
             </div>
           </div>
