@@ -4,19 +4,37 @@ const testimonials = [
   {
     name: "Sarah Johnson",
     role: "CTO, TechCorp",
-    content: "AlphaCrypt transformed our business processes completely. Their automation solutions helped us reduce operational costs by 40%.",
+    content: "AlphaCrypt transformed our business processes completely. Their automation solutions helped us reduce operational costs by 40% while improving overall efficiency. The team's attention to detail was exceptional.",
     rating: 5
   },
   {
     name: "Michael Chen",
     role: "Operations Director, InnovateCo",
-    content: "The team at AlphaCrypt delivered beyond our expectations. Their custom solutions perfectly fit our unique business needs.",
+    content: "The team at AlphaCrypt delivered beyond our expectations. Their custom solutions perfectly fit our unique business needs. Their responsive support team made the implementation process smooth.",
     rating: 5
   },
   {
     name: "Emily Rodriguez",
     role: "CEO, DataFlow Systems",
-    content: "Working with AlphaCrypt was a game-changer for our company. Their expertise in automation and data integration is unmatched.",
+    content: "Working with AlphaCrypt was a game-changer for our company. Their expertise in automation and data integration is unmatched. We've seen a 60% improvement in our workflow efficiency.",
+    rating: 5
+  },
+  {
+    name: "David Thompson",
+    role: "IT Manager, Global Solutions",
+    content: "The cybersecurity solutions provided by AlphaCrypt have given us peace of mind. Their proactive approach to security threats and regular system updates keep our data safe and secure.",
+    rating: 4
+  },
+  {
+    name: "Lisa Zhang",
+    role: "Product Manager, Innovation Hub",
+    content: "AlphaCrypt's AI integration services have revolutionized our product development cycle. Their innovative solutions helped us launch our product three months ahead of schedule.",
+    rating: 5
+  },
+  {
+    name: "James Wilson",
+    role: "Founder, StartUp Dynamics",
+    content: "As a startup, we needed cost-effective solutions that could scale. AlphaCrypt provided exactly that, plus excellent guidance on technology implementation. Highly recommended!",
     rating: 5
   }
 ];
