@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, MapPin } from 'lucide-react';
 
 export const Contact = () => {
   return (
@@ -20,14 +20,6 @@ export const Contact = () => {
               <div>
                 <h3 className="text-xl font-semibold mb-2">Email Us</h3>
                 <p className="text-gray-400">alphacrypt55@gmail.com</p>
-              </div>
-            </div>
-            
-            <div className="flex items-start space-x-4">
-              <Phone className="w-6 h-6 text-primary mt-1" />
-              <div>
-                <h3 className="text-xl font-semibold mb-2">Call Us</h3>
-                <p className="text-gray-400">+1 (555) 123-4567</p>
               </div>
             </div>
             
