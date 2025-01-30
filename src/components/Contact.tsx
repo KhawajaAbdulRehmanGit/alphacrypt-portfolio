@@ -1,6 +1,44 @@
 import { Mail, MapPin } from 'lucide-react';
+import { useState } from 'react';
+import { useToast } from "@/hooks/use-toast";
 
 export const Contact = () => {
+  const { toast } = useToast();
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    // Create mailto link with form data
+    const subject = `Contact from ${formData.name}`;
+    const body = `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage: ${formData.message}`;
+    const mailtoLink = `mailto:alphacrypt55@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    
+    // Open default email client
+    window.location.href = mailtoLink;
+    
+    // Show success toast
+    toast({
+      title: "Email client opened",
+      description: "Your message has been prepared for sending.",
+    });
+
+    // Reset form
+    setFormData({ name: '', email: '', message: '' });
+  };
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
   return (
     <section id="contact" className="py-20 px-4">
       <div className="max-w-6xl mx-auto">
@@ -32,19 +70,31 @@ export const Contact = () => {
             </div>
           </div>
 
-          <form className="space-y-6">
+          <form onSubmit={handleSubmit} className="space-y-6">
             <input
               type="text"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
               placeholder="Your Name"
+              required
               className="w-full px-4 py-3 rounded-lg bg-secondary border border-gray-700 text-white placeholder-gray-400 focus:outline-none focus:border-primary"
             />
             <input
               type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
               placeholder="Your Email"
+              required
               className="w-full px-4 py-3 rounded-lg bg-secondary border border-gray-700 text-white placeholder-gray-400 focus:outline-none focus:border-primary"
             />
             <textarea
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
               placeholder="Your Message"
+              required
               rows={4}
               className="w-full px-4 py-3 rounded-lg bg-secondary border border-gray-700 text-white placeholder-gray-400 focus:outline-none focus:border-primary"
             />
