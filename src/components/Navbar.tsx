@@ -18,11 +18,7 @@ export const Navbar = () => {
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex justify-between items-center">
           <a href="/" className="flex items-center">
-            <img 
-              src="/lovable-uploads/622cc814-fd0e-440c-a839-984cfd85fc1a.png" 
-              alt="AlphaCrypt Logo" 
-              className="h-12 w-auto"
-            />
+            <span className="text-2xl font-bold text-white">AlphaCrypt</span>
           </a>
           
           {/* Mobile menu button */}
