@@ -7,7 +7,6 @@ import { Footer } from '../components/Footer';
 import { Projects } from '../components/Projects';
 import { Testimonials } from '../components/Testimonials';
 import { Blogs } from '../components/Blogs';
-import { AssistantButton } from '../components/AssistantButton';
 
 const Index = () => {
   return (
@@ -21,7 +20,6 @@ const Index = () => {
       <Testimonials />
       <Contact />
       <Footer />
-      <AssistantButton />
     </div>
   );
 };
