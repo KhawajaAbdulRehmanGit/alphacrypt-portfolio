@@ -17,8 +17,12 @@ export const Navbar = () => {
     <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-background/90 backdrop-blur-md py-4' : 'bg-transparent py-6'}`}>
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex justify-between items-center">
-          <a href="/" className="text-2xl font-bold gradient-text">
-            AlphaCrypt
+          <a href="/" className="flex items-center">
+            <img 
+              src="/lovable-uploads/622cc814-fd0e-440c-a839-984cfd85fc1a.png" 
+              alt="AlphaCrypt Logo" 
+              className="h-12 w-auto"
+            />
           </a>
           
           {/* Mobile menu button */}
