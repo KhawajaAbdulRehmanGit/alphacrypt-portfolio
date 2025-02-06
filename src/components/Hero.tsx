@@ -19,9 +19,12 @@ export const Hero = () => {
   const handleLearnMore = () => {
     const aboutSection = document.getElementById('about');
     if (aboutSection) {
-      aboutSection.scrollIntoView({ behavior: 'smooth' });
+      aboutSection.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
+      toast.info("Explore our services and solutions");
     }
-    toast.info("Explore our services and solutions");
   };
 
   return (
