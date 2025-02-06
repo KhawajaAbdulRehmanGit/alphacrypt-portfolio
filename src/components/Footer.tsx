@@ -1,4 +1,4 @@
-import { Github, Linkedin, Twitter } from 'lucide-react';
+import { Instagram, Linkedin, Twitter } from 'lucide-react';
 
 export const Footer = () => {
   return (
@@ -36,7 +36,7 @@ export const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Connect</h4>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                <Github className="w-6 h-6" />
+                <Instagram className="w-6 h-6" />
               </a>
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
                 <Linkedin className="w-6 h-6" />
