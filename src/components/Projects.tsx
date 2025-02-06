@@ -14,16 +14,28 @@ const projects = [
     tags: ["Inventory AI", "Shopify Plus", "Analytics"]
   },
   {
-    title: "Automated Customer Service",
-    description: "Deployed AI chatbot reducing response time by 90% and increasing customer satisfaction",
-    image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81",
-    tags: ["AI Support", "Automation", "CRM"]
+    title: "Healthcare Patient Scheduling",
+    description: "Reduced wait times by 70% using AI-powered scheduling and resource allocation system",
+    image: "https://images.unsplash.com/photo-1538108149393-fbbd81895907",
+    tags: ["Healthcare", "AI Scheduling", "Automation"]
   },
   {
-    title: "Personalized Marketing Engine",
-    description: "Built custom AI marketing system achieving 200% increase in email engagement",
-    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
-    tags: ["Marketing AI", "Shopify", "Automation"]
+    title: "Real Estate Market Analysis",
+    description: "AI-driven property valuation system achieving 95% accuracy in price predictions",
+    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa",
+    tags: ["Real Estate", "AI Analytics", "Prediction"]
+  },
+  {
+    title: "Medical Image Analysis",
+    description: "Developed AI system for early disease detection with 99% accuracy rate",
+    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d",
+    tags: ["Healthcare", "AI Imaging", "Diagnosis"]
+  },
+  {
+    title: "Property Management Automation",
+    description: "Automated 85% of property management tasks using AI workflows",
+    image: "https://images.unsplash.com/photo-1556912172-45b7abe8b7e1",
+    tags: ["Real Estate", "Automation", "Management"]
   },
   {
     title: "Revenue Optimization System",
@@ -32,10 +44,16 @@ const projects = [
     tags: ["Revenue AI", "Pricing", "Analytics"]
   },
   {
-    title: "Conversion Rate Optimization",
-    description: "Implemented AI-driven A/B testing system boosting conversion rates by 85%",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f",
-    tags: ["CRO", "Shopify", "Testing"]
+    title: "Healthcare Resource Optimization",
+    description: "Optimized hospital resource allocation reducing operational costs by 40%",
+    image: "https://images.unsplash.com/photo-1516549655169-df83a0774514",
+    tags: ["Healthcare", "AI Operations", "Optimization"]
+  },
+  {
+    title: "Real Estate Lead Generation",
+    description: "AI-powered lead qualification system increasing conversion rates by 120%",
+    image: "https://images.unsplash.com/photo-1560520653-9e0e4c89eb11",
+    tags: ["Real Estate", "AI Marketing", "Leads"]
   }
 ];
 
