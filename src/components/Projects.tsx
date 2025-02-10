@@ -1,3 +1,4 @@
+
 import { Card, CardContent } from "./ui/card";
 
 const projects = [
@@ -54,6 +55,18 @@ const projects = [
     description: "AI-powered lead qualification system increasing conversion rates by 120%",
     image: "https://images.unsplash.com/photo-1560520653-9e0e4c89eb11",
     tags: ["Real Estate", "AI Marketing", "Leads"]
+  },
+  {
+    title: "AI-Powered Learning Platform",
+    description: "Personalized tutoring system achieving 95% student improvement rate through adaptive learning",
+    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
+    tags: ["EdTech", "AI Tutoring", "Personalization"]
+  },
+  {
+    title: "NFT Trading Analytics Platform",
+    description: "Built AI-driven NFT valuation system with 90% price prediction accuracy using Moralis API",
+    image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7",
+    tags: ["NFT", "Blockchain", "AI Analytics"]
   }
 ];
 
