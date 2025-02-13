@@ -1,3 +1,4 @@
+
 import { Hero } from '../components/Hero';
 import About from '../components/About';
 import { Features } from '../components/Features';
@@ -11,16 +12,29 @@ import { useEffect } from 'react';
 
 const Index = () => {
   useEffect(() => {
-    // Add ElevenLabs widget script
+    // Add ElevenLabs widget script with error handling
     const script = document.createElement('script');
     script.src = "https://elevenlabs.io/convai-widget/index.js";
     script.async = true;
     script.type = "text/javascript";
-    document.body.appendChild(script);
+    script.crossOrigin = "anonymous"; // Add CORS header
+    
+    // Add error handling
+    script.onerror = (error) => {
+      console.error('Error loading ElevenLabs widget:', error);
+    };
+
+    // Only add the script if it hasn't been added before
+    if (!document.querySelector('script[src="https://elevenlabs.io/convai-widget/index.js"]')) {
+      document.body.appendChild(script);
+    }
 
     return () => {
       // Cleanup script when component unmounts
-      document.body.removeChild(script);
+      const existingScript = document.querySelector('script[src="https://elevenlabs.io/convai-widget/index.js"]');
+      if (existingScript && existingScript.parentNode) {
+        existingScript.parentNode.removeChild(existingScript);
+      }
     };
   }, []);
 
