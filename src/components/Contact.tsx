@@ -1,4 +1,5 @@
-import { Mail, MapPin } from 'lucide-react';
+
+import { Mail } from 'lucide-react';
 import { useState } from 'react';
 import { useToast } from "@/hooks/use-toast";
 
@@ -16,7 +17,7 @@ export const Contact = () => {
     // Create mailto link with form data
     const subject = `Contact from ${formData.name}`;
     const body = `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage: ${formData.message}`;
-    const mailtoLink = `mailto:alphacrypt55@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    const mailtoLink = `mailto:info@alphacrypt.tech?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     
     // Open default email client
     window.location.href = mailtoLink;
@@ -57,15 +58,7 @@ export const Contact = () => {
               <Mail className="w-6 h-6 text-primary mt-1" />
               <div>
                 <h3 className="text-xl font-semibold mb-2">Email Us</h3>
-                <p className="text-gray-400">alphacrypt55@gmail.com</p>
-              </div>
-            </div>
-            
-            <div className="flex items-start space-x-4">
-              <MapPin className="w-6 h-6 text-primary mt-1" />
-              <div>
-                <h3 className="text-xl font-semibold mb-2">Visit Us</h3>
-                <p className="text-gray-400">Dubai Silicon Oasis<br />Dubai, United Arab Emirates</p>
+                <p className="text-gray-400">info@alphacrypt.tech</p>
               </div>
             </div>
           </div>
