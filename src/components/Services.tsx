@@ -61,7 +61,7 @@ export const Services = () => {
       {/* Background elements */}
       <div className="absolute inset-0 bg-gradient-to-b from-background via-secondary/30 to-background"></div>
       <div className="absolute top-20 left-10 w-32 h-32 bg-primary/10 rounded-full blur-xl animate-pulse"></div>
-      <div class="absolute bottom-20 right-10 w-40 h-40 bg-primary/5 rounded-full blur-2xl animate-pulse delay-1000"></div>
+      <div className="absolute bottom-20 right-10 w-40 h-40 bg-primary/5 rounded-full blur-2xl animate-pulse delay-1000"></div>
 
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="text-center mb-20">
