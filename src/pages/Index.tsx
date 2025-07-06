@@ -1,4 +1,3 @@
-
 import { Hero } from '../components/Hero';
 import About from '../components/About';
 import { Services } from '../components/Services';
@@ -11,6 +10,7 @@ import { Blogs } from '../components/Blogs';
 import { ThemeProvider } from '../components/ThemeProvider';
 import { FloatingElements } from '../components/FloatingElements';
 import { useEffect } from 'react';
+import { TrustedCompanies } from '../components/TrustedCompanies';
 
 const Index = () => {
   useEffect(() => {
@@ -43,6 +43,7 @@ const Index = () => {
         <FloatingElements />
         <Navbar />
         <Hero />
+        <TrustedCompanies />
         <About />
         <Services />
         <Projects />

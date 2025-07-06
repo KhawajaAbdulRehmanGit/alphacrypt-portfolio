@@ -1,55 +1,55 @@
 
-import { Bot, MessageSquare, ShoppingCart, BarChart3, Headphones, Zap, ArrowRight, CheckCircle } from 'lucide-react';
+import { Bot, MessageSquare, ShoppingCart, BarChart3, Headphones, Zap, ArrowRight, CheckCircle, Heart, Plane, Building2, Factory, Truck, GraduationCap } from 'lucide-react';
 import { useState } from 'react';
 
 const services = [
   {
-    icon: <Bot className="w-12 h-12 text-primary" />,
-    title: "AI Voice Agents",
-    description: "Intelligent voice assistants that handle customer calls, appointments, and support 24/7",
-    features: ["Natural conversation flow", "Multi-language support", "CRM integration", "Real-time analytics"],
-    gradient: "from-blue-500/20 via-primary/20 to-purple-500/20",
-    price: "Starting at $299/month"
-  },
-  {
-    icon: <MessageSquare className="w-12 h-12 text-primary" />,
-    title: "Customer Support Bots",
-    description: "Advanced chatbots that resolve 90% of customer inquiries instantly across all channels",
-    features: ["Omnichannel deployment", "Smart escalation", "Knowledge base integration", "Sentiment analysis"],
-    gradient: "from-green-500/20 via-primary/20 to-teal-500/20",
-    price: "Starting at $199/month"
-  },
-  {
     icon: <ShoppingCart className="w-12 h-12 text-primary" />,
     title: "E-commerce Automation",
-    description: "Complete store automation from inventory management to personalized shopping experiences",
+    description: "Complete store automation from inventory management to personalized shopping experiences and dynamic pricing",
     features: ["Inventory optimization", "Dynamic pricing", "Personalized recommendations", "Order automation"],
     gradient: "from-orange-500/20 via-primary/20 to-red-500/20",
     price: "Starting at $499/month"
   },
   {
-    icon: <BarChart3 className="w-12 h-12 text-primary" />,
-    title: "AI Analytics Dashboard",
-    description: "Real-time business intelligence powered by AI to make data-driven decisions",
-    features: ["Predictive analytics", "Custom dashboards", "Automated reports", "ROI tracking"],
-    gradient: "from-cyan-500/20 via-primary/20 to-blue-500/20",
-    price: "Starting at $399/month"
+    icon: <Heart className="w-12 h-12 text-primary" />,
+    title: "Healthcare AI Solutions",
+    description: "Advanced AI systems for patient management, appointment scheduling, and medical data analysis",
+    features: ["Patient scheduling", "Medical chatbots", "Data analytics", "Compliance monitoring"],
+    gradient: "from-green-500/20 via-primary/20 to-teal-500/20",
+    price: "Starting at $799/month"
   },
   {
-    icon: <Headphones className="w-12 h-12 text-primary" />,
-    title: "AI Call Center",
-    description: "Scale your customer service with AI agents that sound and act like human representatives",
-    features: ["Human-like conversations", "Call routing", "Quality monitoring", "Performance analytics"],
+    icon: <Plane className="w-12 h-12 text-primary" />,
+    title: "Airlines & Travel Automation",
+    description: "Streamline booking processes, customer service, and operational efficiency for travel industry",
+    features: ["Booking automation", "Flight notifications", "Customer support", "Loyalty programs"],
+    gradient: "from-blue-500/20 via-primary/20 to-cyan-500/20",
+    price: "Starting at $899/month"
+  },
+  {
+    icon: <Building2 className="w-12 h-12 text-primary" />,
+    title: "Real Estate Automation",
+    description: "Property management, lead generation, and client communication automation for real estate professionals",
+    features: ["Lead qualification", "Property matching", "Virtual tours", "Contract automation"],
     gradient: "from-purple-500/20 via-primary/20 to-pink-500/20",
-    price: "Starting at $699/month"
+    price: "Starting at $599/month"
   },
   {
-    icon: <Zap className="w-12 h-12 text-primary" />,
-    title: "Custom AI Solutions",
-    description: "Tailored AI automations built specifically for your unique business processes",
-    features: ["Custom development", "API integrations", "Scalable architecture", "Ongoing support"],
-    gradient: "from-indigo-500/20 via-primary/20 to-purple-500/20",
-    price: "Custom pricing"
+    icon: <Factory className="w-12 h-12 text-primary" />,
+    title: "Manufacturing Intelligence",
+    description: "Smart factory solutions with predictive maintenance, quality control, and supply chain optimization",
+    features: ["Predictive maintenance", "Quality control", "Supply chain optimization", "Production planning"],
+    gradient: "from-indigo-500/20 via-primary/20 to-blue-500/20",
+    price: "Starting at $1,299/month"
+  },
+  {
+    icon: <GraduationCap className="w-12 h-12 text-primary" />,
+    title: "Education Technology",
+    description: "AI-powered learning platforms, student management, and personalized education experiences",
+    features: ["Personalized learning", "Student analytics", "Automated grading", "Virtual tutoring"],
+    gradient: "from-cyan-500/20 via-primary/20 to-teal-500/20",
+    price: "Starting at $399/month"
   }
 ];
 
@@ -67,18 +67,18 @@ export const Services = () => {
         <div className="text-center mb-20">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border border-primary/20 backdrop-blur-sm mb-6">
             <Zap className="w-4 h-4 text-primary" />
-            <span className="text-sm text-primary font-medium">AI-Powered Services</span>
+            <span className="text-sm text-primary font-medium">AI-Powered Solutions</span>
           </div>
           
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             <span className="bg-gradient-to-r from-white via-primary to-white bg-clip-text text-transparent">
-              Next-Generation
+              Industry-Specific
             </span>
             <br />
-            <span className="gradient-text">AI Solutions</span>
+            <span className="gradient-text">AI Automation</span>
           </h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
-            Transform your business with our cutting-edge AI agents and automation systems designed for the future
+            Transform your industry with our specialized AI solutions designed for specific business verticals
           </p>
         </div>
 
