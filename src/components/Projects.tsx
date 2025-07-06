@@ -1,5 +1,5 @@
-
 import { Card, CardContent } from "./ui/card";
+import { CheckCircle } from "lucide-react";
 
 const projects = [
   {
